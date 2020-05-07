@@ -126,5 +126,6 @@ function showResult(){
     `
     document.getElementById("result-iframe").src = RESULT_INFO[filCodeName].link;
     document.getElementById("result-container").classList.remove("d-none");
+    window.scrollTo({ top: 0});
 }
 
