@@ -64,36 +64,47 @@ function gatherAnswers(){
 
 RESULT_INFO = {
     ABS: {
+        friendlyName: "ABS",
         link: 'https://www.simplify3d.com/support/materials-guide/abs/'
     },
     Flexible: {
+        friendlyName: "Elastīgs",
         link: 'https://www.simplify3d.com/support/materials-guide/flexible/'
     },
     PLA: {
+        friendlyName: "PLA",
         link: 'https://www.simplify3d.com/support/materials-guide/pla/'
     },
     PETG: {
+        friendlyName: "PETG",
         link: 'https://www.simplify3d.com/support/materials-guide/petg/'
     },
     Nylon: {
+        friendlyName: "Neilons",
         link: 'https://www.simplify3d.com/support/materials-guide/nylon/'
     },
     CarbonFiberFilled: {
+        friendlyName: "Filaments ar oglekļa šķiedru",
         link: 'https://www.simplify3d.com/support/materials-guide/carbon-fiber-filled/'
     },
     ASA: {
+        friendlyName: "ASA",
         link: 'https://www.simplify3d.com/support/materials-guide/asa/'
     },
     Polycarbonate: {
+        friendlyName: "Polikarbonāts",
         link: 'https://www.simplify3d.com/support/materials-guide/polycarbonate/'
     },
     Polypropylene: {
+        friendlyName: "Polipropilēns",
         link: 'https://www.simplify3d.com/support/materials-guide/polypropylene/'
     },
     MetalFilled: {
+        friendlyName: "Filaments ar metāla daliņam",
         link: 'https://www.simplify3d.com/support/materials-guide/metal-filled/'
     },
     WoodFilled: {
+        friendlyName: "Filaments ar koka daliņam",
         link: 'https://www.simplify3d.com/support/materials-guide/wood-filled/'
     },
 }
@@ -109,7 +120,7 @@ function showResult(){
     document.getElementById("question-container").classList.add("d-none");
     document.getElementById("show-result-btn").classList.add("d-none");
     document.getElementById("result-text").innerHTML = 
-    `<p>Ieteicam Jums izvelēties ${filCodeName} filamentu</p>
+    `<p>Balstoties uz jusu atbīldēm, ieteicams filamenta tips ir: <b>${RESULT_INFO[filCodeName].friendlyName}</b> </p>
         <p> Vairāk informācijas: </p>
         <p> [Avots: <a href="${RESULT_INFO[filCodeName].link}">${RESULT_INFO[filCodeName].link}</a>]
     `

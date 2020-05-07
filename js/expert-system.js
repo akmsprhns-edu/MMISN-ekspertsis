@@ -75,10 +75,10 @@ function processAnswers(answers){
     let excelentChoise = 10;
     let poorChoise = -5;
 
-    if(answers[1]['a']){
+    if(answers[1]['a']){ // ja 1. jautājumā ir izvēlēta atbilde "a."
         filamentScores.Flexible += excelentChoise;
     };
-    if(answers[1]['b']){
+    if(answers[1]['b']){ // ja 1. jautājumā ir izvēlēta atbilde "b."
         filamentScores.ABS += goodChoise;
         filamentScores.PLA += goodChoise;
         filamentScores.PETG += goodChoise;
@@ -86,18 +86,18 @@ function processAnswers(answers){
         filamentScores.Polycarbonate += goodChoise;
         filamentScores.Polypropylene += goodChoise;
     };
-    if(answers[1]['c']){
+    if(answers[1]['c']){ // ja 1. jautājumā ir izvēlēta atbilde "c."
         filamentScores.CarbonFiberFilled += goodChoise;
         filamentScores.MetalFilled += goodChoise;
         filamentScores.WoodFilled += goodChoise;
     };
 
-    if(answers[2]['a']){
+    if(answers[2]['a']){ // ja 2. jautājumā ir izvēlēta atbilde "a."
         filamentScores.Flexible += goodChoise;
         filamentScores.Polypropylene += goodChoise;
         filamentScores.MetalFilled += goodChoise;
     };
-    if(answers[2]['b']){
+    if(answers[2]['b']){ // ja 2. jautājumā ir izvēlēta atbilde "b."
         filamentScores.ABS += goodChoise;
         filamentScores.PLA += goodChoise;
         filamentScores.PETG += goodChoise;
@@ -105,75 +105,75 @@ function processAnswers(answers){
         filamentScores.CarbonFiberFilled += goodChoise;
         filamentScores.WoodFilled += goodChoise;
     };
-    if(answers[2]['c']){
+    if(answers[2]['c']){ // ja 2. jautājumā ir izvēlēta atbilde "c."
         filamentScores.Nylon += goodChoise;
         filamentScores.Polycarbonate += goodChoise;
     };  
 
-    if(answers[3]['a']){
+    if(answers[3]['a']){ // ja 3. jautājumā ir izvēlēta atbilde "a."
         filamentScores.PLA += goodChoise;
         filamentScores.CarbonFiberFilled += goodChoise;
         filamentScores.MetalFilled += goodChoise;
         filamentScores.WoodFilled += goodChoise;
     };
-    if(answers[3]['b']){
+    if(answers[3]['b']){ // ja 3. jautājumā ir izvēlēta atbilde "b."
         filamentScores.ABS += goodChoise;
         filamentScores.PETG += goodChoise;
         filamentScores.Polypropylene += goodChoise;
     };
-    if(answers[3]['c']){
+    if(answers[3]['c']){ // ja 3. jautājumā ir izvēlēta atbilde "c."
         filamentScores.Flexible += goodChoise;
         filamentScores.Nylon += goodChoise;
         filamentScores.ASA += goodChoise;
         filamentScores.Polycarbonate += goodChoise;
     };
 
-    if(answers[4]['a']){
+    if(answers[4]['a']){ // ja 4. jautājumā ir izvēlēta atbilde "a."
         filamentScores.PLA += goodChoise;
         filamentScores.CarbonFiberFilled += goodChoise;
         filamentScores.MetalFilled += goodChoise;
         filamentScores.WoodFilled += goodChoise;
     };
-    if(answers[4]['b']){
+    if(answers[4]['b']){ // ja 4. jautājumā ir izvēlēta atbilde "b."
         filamentScores.ABS += goodChoise;
         filamentScores.Flexible += goodChoise;
         filamentScores.PETG += goodChoise;
         filamentScores.Nylon += goodChoise;
         filamentScores.ASA += goodChoise;
     };
-    if(answers[4]['c']){
+    if(answers[4]['c']){ // ja 4. jautājumā ir izvēlēta atbilde "c."
         filamentScores.Polycarbonate += goodChoise;
         filamentScores.Polypropylene += goodChoise;
     };
 
-    if(answers[5]['a']){
+    if(answers[5]['a']){ // ja 5. jautājumā ir izvēlēta atbilde "a."
         filamentScores.PLA += poorChoise;
         filamentScores.Nylon += poorChoise;
         filamentScores.PETG += goodChoise;
         filamentScores.ASA += goodChoise;
     };
-    if(answers[5]['b']){
-
+    if(answers[5]['b']){ // ja 5. jautājumā ir izvēlēta atbilde "b."
+        // nemainīt neko 
     };
 
-    if(answers[6]['a']){
+    if(answers[6]['a']){ // ja 6. jautājumā ir izvēlēta atbilde "a."
         filamentScores.PETG += goodChoise;
         filamentScores.Polypropylene += goodChoise;
     };
-    if(answers[6]['b']){
+    if(answers[6]['b']){ // ja 6. jautājumā ir izvēlēta atbilde "b."
         filamentScores.ABS += goodChoise;
         filamentScores.PLA += goodChoise;
         filamentScores.PETG += goodChoise;
     };
-    if(answers[6]['c']){
+    if(answers[6]['c']){ // ja 6. jautājumā ir izvēlēta atbilde "c."
         filamentScores.ABS += goodChoise;
         filamentScores.PLA += goodChoise;
         filamentScores.PETG += goodChoise;
     };
-    if(answers[6]['d']){
+    if(answers[6]['d']){ // ja 6. jautājumā ir izvēlēta atbilde "d."
         filamentScores.ASA += excelentChoise;
     };
-    if(answers[6]['e']){
+    if(answers[6]['e']){ // ja 6. jautājumā ir izvēlēta atbilde "e."
         filamentScores.PLA += goodChoise;
         filamentScores.WoodFilled += goodChoise;
     };

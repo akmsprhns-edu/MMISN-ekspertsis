@@ -1,3 +1,18 @@
+.container{
+    max-width: unset;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+.about{
+    border: 1px solid black;
+    padding: 15px;
+    width: 80vw;
+}
+
+.question-box{
+    padding-left: 30px;
+}
+
 .question-box{
     padding-top: 10px;
     padding-bottom: 10px;
